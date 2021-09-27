@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h4,
+h5 {
+  font-size: 1em;
+  margin: 5px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgray;
+}
+
+nav {
+  background-color: #add8e6;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4em;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  margin-top: 2em;
+  display: flex;
+}
+
+.products {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.products__item {
+  width: 350px;
+  height: 400px;
+  margin: 1em;
+  text-align: center;
+}
+.product-image {
+  height: 80%;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.product-price::before {
+  content: "$";
+}
+.filter-container {
+  background-color: lightblue;
+  height: 355px;
+  justify-content: center;
+  align-items: center;
+}
+.filter {
+  height: 3em;
+  width: 50%;
+  padding: 5px;
+}
+footer {
+  background-color: #add8e6;
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  color: black;
+  font-weight: bold;
+}
+/* LOADER BELOW. CREDIT TO https://loading.io/ */
+.loader {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #ee6d52;
+  border-color: #ee6d52 transparent #ee6d52 transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+/* LOADER ABOVE. CREDIT TO https://loading.io/ */
